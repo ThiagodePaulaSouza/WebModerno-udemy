@@ -4,8 +4,8 @@
 
     constante é letra maiúscula
 */
-const PI = 3.14
-const RAIO = 10
-const resultado = 3.14 * RAIO * RAIO
+const PI = 3.141592;
+const raio = 10;
+const areaCirc = PI * raio * raio;
 
-console.log(resultado)
+console.log("o valor da area é: " + areaCirc + " m2");
