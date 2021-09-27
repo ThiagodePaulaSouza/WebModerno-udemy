@@ -1,17 +1,15 @@
-/*
-    bloco 1 - imprima apenas impares
-
-    bloco 2 - imprima apenas pares
- */
-console.log("Descubra os numeros pares");
-for (let i = 0; i <= 10; i++) {
-    if (i % 2 == 0) {
-        console.log("o numero par é: " + i);
-    }
+{
+  console.log(1);
+  console.log(3);
+  console.log(5);
+  console.log(7);
+  console.log(9);
 }
 
-for (let i = 0; i <= 10; i++) {
-    if (i % 2 == 1) {
-        console.log("o numero impar é: " + i);
-    }
+{
+  console.log(2);
+  console.log(4);
+  console.log(6);
+  console.log(8);
+  console.log(10);
 }
