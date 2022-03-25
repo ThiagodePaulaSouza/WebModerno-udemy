@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/index.js"></script>
+
     <title>Consumir API CEP</title>
 </head>
 
@@ -20,29 +20,29 @@
         <div class="row">
             <div class="inputbox">
                 <label class="nome">Nome</label>
-                <input type="text" class="nome" />
+                <input type="text" class="nome" id="nome" required />
                 <label class="email">Email</label>
-                <input type="text" class="email" />
+                <input type="text" class="email" id="email" required />
             </div>
         </div>
         <div class="row">
             <div class="inputbox">
-                <label>CEP</label>
-                <input type="text" />
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" required/>
                 <label>Endereco</label>
-                <input type="text" />
+                <input type="text" id="endereco" required />
                 <label>Número</label>
-                <input type="text" />
+                <input type="text" id="numero" required />
             </div>
         </div>
         <div class="row">
             <div class="inputbox">
                 <label>Bairro</label>
-                <input type="text" />
+                <input type="text" id="bairro" required />
                 <label>Cidade</label>
-                <input type="text" />
+                <input type="text" id="cidade" required />
                 <label>Estado</label>
-                <input type="text" />
+                <input type="text" id="estado" required />
             </div>
         </div>
         <div class="rowButton">
@@ -60,5 +60,6 @@
         </a>
     </footer>
 </body>
+<script src="./js/index.js"></script>
 
 </html>
