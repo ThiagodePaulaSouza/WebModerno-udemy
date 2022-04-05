@@ -1,6 +1,5 @@
 'use strict'
 
-
 const limparFormulario = () => {
     document.getElementById('endereco').value = "";
     document.getElementById('bairro').value = "";
@@ -37,4 +36,5 @@ const consumirApi = async() => {
         console.log(validarCep())
     }
 }
+
 document.getElementById('cep').addEventListener('focusout', consumirApi);
