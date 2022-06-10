@@ -1,3 +1,3 @@
 # Maratona Explorer - Rockeatseat
 
-![](https://github.com/ThiagodePaulaSouza/Javascript-Exercises/tree/main/MaratonaExplorer/projectImg.PNG)
+![](https://github.com/ThiagodePaulaSouza/Javascript-Exercises/blob/main/MaratonaExplorer/projectImg.PNG)
