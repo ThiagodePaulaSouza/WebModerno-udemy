@@ -15,3 +15,16 @@ class Produto {} //internamente é função
 console.log(typeof Produto)
 console.log(typeof new Produto)
 console.log(typeof new Produto())
+
+console.log("------------------")
+
+function ObjTeste(sla) {
+    this.sla = sla
+    this.myFunc = () => {
+        console.log("Função funciona")
+    }
+}
+
+const obj2 = new ObjTeste("Sla meu");
+console.log(obj2.sla);
+obj2.myFunc()
