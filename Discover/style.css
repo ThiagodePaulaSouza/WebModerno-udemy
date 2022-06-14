@@ -1,3 +1,24 @@
+/* inclui css externo */
+@import url();
+
+/* regras condicionais para dispositivos */
+@media screen {
+    
+}
+
+/* fontes externas */
+@font-face {
+    font-family: sans-serif;
+    src: url();
+}
+
+/* Animação */
+@keyframes identifier {
+    
+}
+
+
+
 * {
     margin: 0;
     box-sizing: 0;
