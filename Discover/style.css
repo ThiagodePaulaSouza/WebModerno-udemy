@@ -1,18 +1,16 @@
 * {
-  box-sizing: 0;
-  margin: 0;
-}
-h1, h2 {
-  color: red;
-  font-size: 60px;
-  background: black;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-#container { 
-    width: 200px;
+h1 { 
+    border: 1px solid red;
+    margin: 200px;
+    padding: 60px;
 }
 
-.m-40 {
-    margin: 40px;
+p {
+    border: 1px solid red;
+    font-family: 'Poppins', sans-serif;
 }
-
