@@ -1,0 +1,18 @@
+* {
+  box-sizing: 0;
+  margin: 0;
+}
+h1, h2 {
+  color: red;
+  font-size: 60px;
+  background: black;
+}
+
+#container { 
+    width: 200px;
+}
+
+.m-40 {
+    margin: 40px;
+}
+
