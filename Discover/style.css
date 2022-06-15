@@ -1,37 +1,27 @@
-/* inclui css externo */
-@import url();
-
-/* regras condicionais para dispositivos */
-@media screen {
-    
-}
-
-/* fontes externas */
-@font-face {
-    font-family: sans-serif;
-    src: url();
-}
-
-/* Animação */
-@keyframes identifier {
-    
-}
-
-
-
+/* Shorthand
+    junção de propriedade
+    resumido
+    légivel
+*/
 * {
-    margin: 0;
-    box-sizing: 0;
-    font-family: 'Roboto', sans-serif;
+    background-color: #aaa;
+    background-image: url(https://c.tenor.com/8POLqSLpa8cAAAAC/monica-susto.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    /* shorthand */
+    background: #aaa url(https://c.tenor.com/8POLqSLpa8cAAAAC/monica-susto.gif) no-repeat bottom;
+
+    font: italic bold 1.2em 'Roboto', sans-serif;
 }
 
-h1 { 
-    border: 1px solid red;
-    margin: 200px;
-    padding: 60px;
+h1 {
+  border: 1px solid red;
+  margin: 200px;
+  padding: 60px;
 }
 
 p {
-    border: 1px solid red;
-    font-family: 'Poppins', sans-serif;
+  border: 1px solid red;
+  font-family: "Poppins", sans-serif;
 }
