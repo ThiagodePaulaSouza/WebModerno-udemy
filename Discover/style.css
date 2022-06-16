@@ -3,16 +3,23 @@
     resumido
     légivel
 */
+/* UNIDADE COMUNS
+  langth      Representa um valor de distancia: px, em, rem, vw
+  angle       Representa um ângulo: deg, rad, turn
+  time        Representa um tempo: s, ms
+  resolution  Representa resoluções para dispositivos: dpi
+ */
 * {
-    background-color: #aaa;
-    background-image: url(https://c.tenor.com/8POLqSLpa8cAAAAC/monica-susto.gif);
-    background-repeat: no-repeat;
-    background-position: bottom;
+  background-color: #aaa;
+  background-image: url(https://c.tenor.com/8POLqSLpa8cAAAAC/monica-susto.gif);
+  background-repeat: no-repeat;
+  background-position: bottom;
 
-    /* shorthand */
-    background: #aaa url(https://c.tenor.com/8POLqSLpa8cAAAAC/monica-susto.gif) no-repeat bottom;
+  /* shorthand */
+  background: #aaa url(https://c.tenor.com/8POLqSLpa8cAAAAC/monica-susto.gif)
+    no-repeat bottom;
 
-    font: italic bold 1.2em 'Roboto', sans-serif;
+  font: italic bold 1.2em "Roboto", sans-serif;
 }
 
 h1 {
