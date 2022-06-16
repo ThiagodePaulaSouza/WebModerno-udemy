@@ -10,6 +10,7 @@
   resolution  Representa resoluções para dispositivos: dpi
  */
 * {
+  box-sizing: border-box;
   background-color: #aaa;
   background-image: url(https://c.tenor.com/8POLqSLpa8cAAAAC/monica-susto.gif);
   background-repeat: no-repeat;
@@ -20,6 +21,15 @@
     no-repeat bottom;
 
   font: italic bold 1.2em "Roboto", sans-serif;
+}
+
+div {
+  
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 10%;
+  padding: 0 20px;
 }
 
 h1 {
