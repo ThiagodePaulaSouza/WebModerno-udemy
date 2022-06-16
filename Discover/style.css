@@ -28,6 +28,11 @@ h1 {
   padding: 60px;
 }
 
+h1::after {
+  content: "Ou sera que não";
+  color: black;
+}
+
 p {
   border: 1px solid red;
   font-family: "Poppins", sans-serif;
