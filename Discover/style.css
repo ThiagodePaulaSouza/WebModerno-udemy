@@ -1,52 +1,28 @@
-/* Shorthand
-    junção de propriedade
-    resumido
-    légivel
-*/
-/* UNIDADE COMUNS
-  langth      Representa um valor de distancia: px, em, rem, vw
-  angle       Representa um ângulo: deg, rad, turn
-  time        Representa um tempo: s, ms
-  resolution  Representa resoluções para dispositivos: dpi
- */
 * {
   box-sizing: border-box;
-  background-color: #3a3a3a;
-  background-image: url(https://c.tenor.com/8POLqSLpa8cAAAAC/monica-susto.gif);
-  background-repeat: no-repeat;
-  background-position: bottom;
-
-  /* shorthand */
-  font: italic bold 1.2em "Roboto", sans-serif;
+  background-color: #5e5e5e;
 }
 
 div {
-  border: 1px solid white;
-  width: 100px;
-  height: 100px;
-  display: inline;
-  margin: 200px;
+  color: springgreen;
 }
-span {
-  margin: 100px;
-  border: 1px solid white;
-  width: 100px;
-  height: 100px;
-  display: block;
-}
-
 h1 {
-  border: 1px solid red;
-  margin: 200px;
-  padding: 60px;
+  color: currentColor;
 }
 
-h1::after {
-  content: "Ou sera que não";
-  color: black;
+span {
+  color: #FF1348;
 }
 
-p {
-  border: 1px solid red;
-  font-family: "Poppins", sans-serif;
+span p {
+  color: hsl(200, 100%, 70%);
+}
+span h1 {
+  color: initial;
+}
+span h3 {
+  color: inherit;
+}
+span h2 {
+  color: unset;
 }
