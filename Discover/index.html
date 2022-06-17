@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>video</title>
+    <title>audio</title>
 </head>
-<!-- autoplay -->
-<!-- preload="metadados" -->
+<!-- muted -->
+<!-- n tem poster, altura e largura -->
 <body>
-    <video controls width="400" height="300" preload="none" loop muted poster="./imagem-poster.jpg">
-        <source src="./video.mp4" type="video/mp4">
-        <p>Este Browser não suporta video, baixe-o aqui</p>
-    </video>
+    <audio autoplay controls>
+        <source src="./meuAudio.mp3" type="audio/mp3" loop>
+        <p>Seu navegador não suporta tag audio</p>
+    </audio>
 </body>
 </html>
