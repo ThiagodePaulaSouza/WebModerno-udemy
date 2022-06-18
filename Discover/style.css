@@ -1,0 +1,26 @@
+.box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+main {
+    margin-top: 100px;
+    position: relative;
+}
+
+.box1 {
+    background-color: red;
+    /* absoluto ao pai, sem pai = pagina */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.box2 {
+    background-color: green;
+}
+
+.box3 {
+    background-color: blue;
+}
