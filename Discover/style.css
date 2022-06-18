@@ -1,26 +1,29 @@
 .box {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 8px;
-}
-
-main {
-    margin-top: 100px;
-    position: relative;
 }
 
 .box1 {
     background-color: red;
-    /* absoluto ao pai, sem pai = pagina */
     position: absolute;
-    left: 0px;
-    top: 0px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
 }
 
 .box2 {
     background-color: green;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
 }
 
 .box3 {
     background-color: blue;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
 }
