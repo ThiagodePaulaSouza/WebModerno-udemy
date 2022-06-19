@@ -4,38 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Formulario</title>
+    <title>button</title>
   </head>
   <body>
-    <form action="" method="GET" >
-      <fieldset disabled name="input-contato">
-        <legend>Contato</legend>
-        <label for="">Nome:</label>
-        <input type="text">
-      </fieldset>
+    <button type="submit">Enviar</button>
+    <button type="button">Enviar</button>
+    <button type="reset">Resetar formulario</button>
+    <button autofocus>Autofocos</button>
+    <button disabled>disabled</button>
+    <button type="submit" name="button" value="Valor qualquer">name</button>
+
+    
+    <button type="submit" form="meu-formulario">Enviar Form</button>
+
+    <form action="" id="meu-formulario"></form>
+    ou
+    <input type="submit" form="meu-formulario" value="input-submit"/>
+
+
+
+
+
+    <form action="">
+      <input type="text" name="teste reset" value="" />
+      <button type="reset">Limpar</button>
     </form>
-
-    <form id="teste" action=""> <button>enviar</button></form>
-
-    <fieldset form="teste" name="input-teste">
-
-      <legend>testee</legend>
-      <label for="">Nome:</label>
-      <input type="text">
-
-    </fieldset>
-
-
-    <label for="">
-      insira um texto:
-      <input type="text">
-      Outro Texto:
-      <input type="text">
-    </label>
-
-    <label for="contato">Contato Completo</label>
-    <input id="contato" type="text" >
-
   </body>
 </html>
