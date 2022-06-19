@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>button</title>
-  </head>
-  <body>
-    <button type="submit">Enviar</button>
-    <button type="button">Enviar</button>
-    <button type="reset">Resetar formulario</button>
-    <button autofocus>Autofocos</button>
-    <button disabled>disabled</button>
-    <button type="submit" name="button" value="Valor qualquer">name</button>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>data-list</title>
+</head>
+<body>
+  <input type="text" list="nomes" placeholder="Escolha um nome">
 
-    
-    <button type="submit" form="meu-formulario">Enviar Form</button>
+  <datalist id="nomes">
+    <option>#ff0000</option>
+    <option>#BBFFAA</option>
+    <option>#AAFF12</option>
+    <option>Mario</option>
+    <option>Luigi</option>
+    <option>King Kong</option>
+    <option>Machado de Assis</option>
+    <option>Roberto Carlos</option>
+  </datalist>
 
-    <form action="" id="meu-formulario"></form>
-    ou
-    <input type="submit" form="meu-formulario" value="input-submit"/>
-
-
-
-
-
-    <form action="">
-      <input type="text" name="teste reset" value="" />
-      <button type="reset">Limpar</button>
-    </form>
-  </body>
+  <input type="color" list="nomes">
+</body>
 </html>
