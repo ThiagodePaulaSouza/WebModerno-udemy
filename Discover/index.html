@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>input</title>
-  </head>
-  <body>
-    <input type="text" />
-    <input type="date" />
-    <input type="number" />
-    <input type="color" />
-    <input type="email" />
-    <!-- na hora de enviar ele falha caso n esteja com @seila.com -->
-    <input type="file" />
-    <input type="password" />
-
-    <!-- atributos: -->
-    <!-- 
-      autocomplete
-      autofocus
-      disabled
-      value
-      readonly      (quase todos)
-      form          (quase todos)
-      name
-      required      (quase todos)
-      placeholder   (quase todos)   (password, search, tel, text, url)    (acessibilidade n le)
-     -->
-
-     <input type="email" autocomplete="email" autofocus value="opa" disabled>
-     <input type="text" value="textoaleatorio" readonly>
-     
-     <form id="um-form-bonito"></form>
-     <input name="senha" type="password" form="um-form-bonito" required placeholder="digite sua senha:">
-
-
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+</head>
+<body>
+    <form action="">
+        <input 
+            type="password" 
+            pattern="[0-9a-fA-F]{4,8}"
+            title="Coloque Hex no mínimo 4 char e no maximo 8 char"
+            placeholder="Insira sua senha"
+            required
+            inputmode="numeric"
+            autocomplete="new-password"
+        ></input>
+        <button type="submit">enviar</button>
+    </form>
+</body>
 </html>
