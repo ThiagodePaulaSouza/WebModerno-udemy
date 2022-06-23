@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password</title>
+    <title>email</title>
 </head>
 <body>
     <form action="">
-        <input 
-            type="password" 
-            pattern="[0-9a-fA-F]{4,8}"
-            title="Coloque Hex no mínimo 4 char e no maximo 8 char"
-            placeholder="Insira sua senha"
-            required
-            inputmode="numeric"
-            autocomplete="new-password"
-        ></input>
+        <input type="email"
+        value="user@user.com"
+        required
+        multiple
+        minlength="8"
+        maxlength="255"
+        size="30"
+        pattern="[.+@gmail\.com\.br]"
+        title="somente emails gmail será aceitos"
+        >
         <button type="submit">enviar</button>
     </form>
 </body>
