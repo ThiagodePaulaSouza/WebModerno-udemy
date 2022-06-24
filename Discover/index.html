@@ -4,33 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>url</title>
+    <title>File</title>
 </head>
+<!-- 
+    accept="video/*"                aceitar todo tipo de video      .wmv .mp4
+    accept="audio/*"                aceitar todo tipo de audio      .mp3
+    accept="image/*"                aceitar todo tipo de imagem     .png .pjeg
+-->
 <body>
-    <form action="">
-        <!-- 
-            value
-            disable
-         -->
+    <form method="post" enctype="multipart/form-data">
         <input 
-        type="url"
-        placeholder="http://example.com"
-        minlength="12"
-        maxlength="255"
-        size="25"
-        pattern=".*\.com\.br.*"
-        title="somente dominios .com.br será aceitos"
-        required
-        list="urls-data"
-        spellcheck="false"
+        type="file"
+        accept=".js"
+        multiple
         >
-
-        <datalist id="urls-data">
-            <option>https://www.google.com.br</option>
-            <option>http://meusite.com.br</option>
-        </datalist>
-
-        <button type="submit">enviar</button>
     </form>
 </body>
 </html>
