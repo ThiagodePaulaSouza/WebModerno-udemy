@@ -2,21 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>email</title>
+    <title>url</title>
 </head>
 <body>
     <form action="">
-        <input type="email"
-        value="user@user.com"
-        required
-        multiple
-        minlength="8"
+        <!-- 
+            value
+            disable
+         -->
+        <input 
+        type="url"
+        placeholder="http://example.com"
+        minlength="12"
         maxlength="255"
-        size="30"
-        pattern="[.+@gmail\.com\.br]"
-        title="somente emails gmail será aceitos"
+        size="25"
+        pattern=".*\.com\.br.*"
+        title="somente dominios .com.br será aceitos"
+        required
+        list="urls-data"
+        spellcheck="false"
         >
+
+        <datalist id="urls-data">
+            <option>https://www.google.com.br</option>
+            <option>http://meusite.com.br</option>
+        </datalist>
+
         <button type="submit">enviar</button>
     </form>
 </body>
