@@ -4,20 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File</title>
+    <title>color</title>
 </head>
-<!-- 
-    accept="video/*"                aceitar todo tipo de video      .wmv .mp4
-    accept="audio/*"                aceitar todo tipo de audio      .mp3
-    accept="image/*"                aceitar todo tipo de imagem     .png .pjeg
--->
 <body>
-    <form method="post" enctype="multipart/form-data">
-        <input 
-        type="file"
-        accept=".js"
-        multiple
-        >
-    </form>
+    <datalist id="colors-data">
+        <option>#FF7979</option>
+        <option>#D3D3D3</option>
+        <option>#8365AD</option>
+    </datalist>
+    <input list="colors-data" type="color" value="#B3B3FF">
 </body>
 </html>
