@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>checkbox</title>
-  </head>
-  <body>
-    <fieldset>
-        <!-- no backend vai aparecer assim:
-            Interesses=code,music
-         -->
-        <legend>Escolha seus interesses</legend>
-        <div>
-            <label for="code">Codar</label>
-            <input type="checkbox" name="Interesses" id="code" value="code" />
-            <!-- se marcar recebe no backend -> subscribe = on -->
-        </div>
-        <div>
-            <label for="music">Musica</label>
-            <input type="checkbox" name="Interesses" id="music" value="music" checked />
-        </div>
-    </fieldset>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hidden</title>
+</head>
+<body>
+    <input type="hidden" name="timestamp" id="timestamp" value="123456789">
+
+    <input type="hidden" name="id" id="2">
+    <!-- no backend recebo id=2 -->
+</body>
 </html>
