@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>radio</title>
-</head>
-<body>
-    <fieldset>
-        <legend>Cafézin?</legend>
-        <label for="sim">sim</label>
-        <input type="radio" name="coffe" id="sim" value="yes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textarea</title>
+  </head>
+  <!-- 
+  wrap=soft      padrão
+  wrap=hard
+ -->
+  <body>
+    <label for="message">Mensagem</label>
 
-        <label for="nao">nao</label>
-        <input type="radio" name="coffe" id="nao" value="no" checked>
-
-    </fieldset>
-</body>
+    <textarea
+      name="message"
+      id="message"
+      rows="20"
+      cols="50"
+      maxlength="255"
+      minlength="4"
+      wrap="off"
+      autocomplete
+      autofocus
+      placeholder="Escreve uma mensagem"
+      
+    >
+    </textarea>
+  </body>
 </html>
