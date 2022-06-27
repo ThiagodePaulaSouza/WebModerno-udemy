@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search</title>
-  </head>
-  <body>
-    <!-- no backend recebe 
-    q=searchTerm
-  -->
-    <datalist id="terms">
-      <option>Mac</option>
-      <option>Windows</option>
-      <option>Linux</option>
-    </datalist>
-
-    <form action="">
-      <label for="">Pesquisa por id</label>
-      <input
-        aria-label="Campo de Pesquisa: Digite um id"
-        type="search"
-        name="q"
-        list="terms"
-        placeholder="Digite um id"
-        size="11"
-        pattern="[0-9]{2}"
-        title="Digite o número do ID: 99"
-      />
-      <button>Search</button>
-    </form>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>number</title>
+</head>
+<body>
+  <datalist id="numeroslist">
+    <option value="">12</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+  </datalist>
+  <form action="">
+    <input list="numeroslist" type="number">
+    <button>Enviar</button>
+  </form>
+</body>
 </html>
