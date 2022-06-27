@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Select</title>
+    <title>Search</title>
   </head>
   <body>
-    <label for="opinion-select">vc concorda?</label> <br />
-    <select name="opcao" id="opinion-select" multiple size="3">
-      <option value="concorda">sim</option>
-      <option value="discorda">não</option>
-      <option value="indiferente">talvez</option>
-      <option value="nao-liga">quem</option>
-      <option value="sem-interesse">pse</option>
-      <option value="ok">uhum</option>
-    </select>
-    <!-- no backend
-    opcao=condorda
-   -->
+    <!-- no backend recebe 
+    q=searchTerm
+  -->
+    <datalist id="terms">
+      <option>Mac</option>
+      <option>Windows</option>
+      <option>Linux</option>
+    </datalist>
+
+    <form action="">
+      <label for="">Pesquisa por id</label>
+      <input
+        aria-label="Campo de Pesquisa: Digite um id"
+        type="search"
+        name="q"
+        list="terms"
+        placeholder="Digite um id"
+        size="11"
+        pattern="[0-9]{2}"
+        title="Digite o número do ID: 99"
+      />
+      <button>Search</button>
+    </form>
   </body>
 </html>
