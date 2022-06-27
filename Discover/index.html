@@ -4,28 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>textarea</title>
+    <title>Select</title>
   </head>
-  <!-- 
-  wrap=soft      padrão
-  wrap=hard
- -->
   <body>
-    <label for="message">Mensagem</label>
-
-    <textarea
-      name="message"
-      id="message"
-      rows="20"
-      cols="50"
-      maxlength="255"
-      minlength="4"
-      wrap="off"
-      autocomplete
-      autofocus
-      placeholder="Escreve uma mensagem"
-      
-    >
-    </textarea>
+    <label for="opinion-select">vc concorda?</label> <br />
+    <select name="opcao" id="opinion-select" multiple size="3">
+      <option value="concorda">sim</option>
+      <option value="discorda">não</option>
+      <option value="indiferente">talvez</option>
+      <option value="nao-liga">quem</option>
+      <option value="sem-interesse">pse</option>
+      <option value="ok">uhum</option>
+    </select>
+    <!-- no backend
+    opcao=condorda
+   -->
   </body>
 </html>
