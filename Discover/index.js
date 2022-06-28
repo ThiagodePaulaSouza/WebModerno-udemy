@@ -1,12 +1,13 @@
-/**
- * Contar quantos caracteres tem uma palavra e quantos digitos tem um numero
- */
-const word = "thigas o heroi";
-const num = 123456789;
+const numeroQuebrado = 18926.1409282;
+const word = "aprender é legal porem não é facil"
 
 console.log(
-    `
-        word tem ${word.length} caracteres
-        num tem ${String(num).length} digitos
-    `
+  `
+    transformar para deixar tudo maiúsculo
+    ${word.toUpperCase()}
+
+    transformar para deixar tudo minusculo  
+    ${word.toLowerCase()}
+
+  `
 );
