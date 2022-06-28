@@ -1,12 +1,20 @@
-const numeroQuebrado = 18926.1409282;
 const word = "aprender é legal porem não é facil";
+const arrayWord = word.split(" ");
+const wordWithUnderscore = arrayWord.join("_")
 
 console.log(
   `
-    verificar se tem uma palavra dentro de uma string:
-    texto: ${word}
-    chato: ${word.includes("chato")}
-    legal: ${word.includes("legal")}
+    separar um texto que contem espaços e colocar _
+    texto: 
+    
+    ${word}
+
+    array do texto: 
+    ${arrayWord}
+
+    _ entre espaços: 
+    ${wordWithUnderscore}
+
 
   `
 );
