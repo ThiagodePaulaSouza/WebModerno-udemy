@@ -1,6 +1,12 @@
-console.log("test".__proto__)
-console.log(1.2.__proto__)
-console.log(true.__proto__)
-console.log(["aasd", 112.0, true].__proto__)
+/**
+ * Contar quantos caracteres tem uma palavra e quantos digitos tem um numero
+ */
+const word = "thigas o heroi";
+const num = 123456789;
 
-console.log( 190.0.hasOwnProperty() )
+console.log(
+    `
+        word tem ${word.length} caracteres
+        num tem ${String(num).length} digitos
+    `
+);
