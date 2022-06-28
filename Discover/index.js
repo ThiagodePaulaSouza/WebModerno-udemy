@@ -1,20 +1,29 @@
-const word = "aprender é legal porem não é facil";
-const arrayWord = word.split(" ");
-const wordWithUnderscore = arrayWord.join("_")
+const teste = ["python", "javascript", "csharp", "java", "lua"];
 
-console.log(
-  `
-    separar um texto que contem espaços e colocar _
-    texto: 
-    
-    ${word}
+// "adicionar um item no final"
+teste.push("php");
+console.log(teste);
 
-    array do texto: 
-    ${arrayWord}
+// "adicionar no começo"
+teste.unshift("sql");
+console.log(teste);
 
-    _ entre espaços: 
-    ${wordWithUnderscore}
+// "remover do fim"
+teste.pop();
+console.log(teste);
 
+// "remover do começo"
+teste.shift();
+console.log(teste);
 
-  `
-);
+// pegar somente alguns elementos em qualquer posição do array
+console.log(teste.slice(2, 5));
+
+// "remover 1 ou mais items em qualquer posição do array"
+teste.splice(1, 1);
+console.log(teste);
+
+// encontrar a posição de um elemento no array
+let index = teste.indexOf("lua");
+teste.splice(index, 1);
+console.log(teste);
