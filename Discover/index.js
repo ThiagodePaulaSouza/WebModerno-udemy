@@ -3,11 +3,13 @@ const word = "aprender é legal porem não é facil"
 
 console.log(
   `
-    transformar para deixar tudo maiúsculo
-    ${word.toUpperCase()}
+    trocar o numero de casas decimais:
+    ${numeroQuebrado.toFixed(3)}
 
-    transformar para deixar tudo minusculo  
-    ${word.toLowerCase()}
+    trocar "." para ",":
+    ${numeroQuebrado.toFixed(5).replace(".", ",")}
+    
+    
 
   `
 );
