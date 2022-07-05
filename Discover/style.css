@@ -1,8 +1,7 @@
 .box {
     display: flex;
-    border: 1px dashed red;
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    border: 1px solid red;
+    flex-flow: column wrap;
 }
 
 .box div {
