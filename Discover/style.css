@@ -1,32 +1,29 @@
-h1 {
-    color: blue;
-    font-size: 60px;
-}
-
-p {
-    color: green;
-}
-
-#title {
+body article h2 {
     color: red;
 }
 
-#content {
-    color: blueviolet;
+/* seleciona somento o elemento que é filho direto do pai
+    outros elementos depois do filho direto serão deconsiderados
+ */
+body > ul > li {
+    color: blue;
 }
 
-.bg-gray {
-    background-color: gray;
+/* seleciona somente o elemento do lado direto que é irmão direto na hierarquia */
+h1 + p {
+    color: chartreuse;
 }
 
-.big {
-    font-size: 3em;
+button + button {
+    margin-left: 40px;
 }
 
-[title] {
-    color: aqua;
+/* seleciona todos os elementos irmãos */
+h3 ~ span {
+    color: coral;
 }
 
-h1:hover, p:hover {
-    background-color: brown;
+/* super especifico */
+ul > li[class="red"] {
+    color: red;
 }
