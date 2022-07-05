@@ -1,0 +1,32 @@
+h1 {
+    color: blue;
+    font-size: 60px;
+}
+
+p {
+    color: green;
+}
+
+#title {
+    color: red;
+}
+
+#content {
+    color: blueviolet;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.big {
+    font-size: 3em;
+}
+
+[title] {
+    color: aqua;
+}
+
+h1:hover, p:hover {
+    background-color: brown;
+}
