@@ -1,11 +1,11 @@
-.container {
+.box {
     display: flex;
-    /* row row-reverse column column-reverse */
-    flex-direction: column-reverse;
-    border: 2px solid blue;
-    height: 20vh;
+    border: 1px dashed red;
+    flex-wrap: wrap;
+    /* justify-content: center; */
 }
 
-.parts {
-    border: 1px solid ;
+.box div {
+    border: 1px solid;
+    width: 80px;
 }
