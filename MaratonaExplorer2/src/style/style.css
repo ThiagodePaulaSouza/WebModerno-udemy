@@ -44,7 +44,11 @@ img.avatar {
   height: 150px;
   padding: 3.7px;
   border: #4263eb solid 4px;
+  transition: transform 5s;
+}
 
+img.avatar:hover {
+    transform: rotate(3600deg);
 }
 
 
