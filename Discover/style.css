@@ -1,70 +1,8 @@
-/* faz um if pra ver se tem o negocio ai pra dps aplicar */
-ul li:first-child {
-    font-weight: bold;
-    color: red;
+.flexbox {
+    display: flex;
+    flex-direction: column;
 }
 
-/* pegue dos tipos de "li" o (1) */
-ul li:nth-of-type(1) {
-    color: teal;
-}
-
-/* pegue o 3 filho do ul (desconsidera li), se tiver li ai ele aplica */
-ul li:nth-child(3){
-    color: blue;
-}
-
-/* numeros pares */
-ul li:nth-child(even){
-    color: green;
-}
-/* numeros impares */
-ul li:nth-child(odd){
-    color: yellow;
-    background-color: #aaa;
-}
-
-
-a:hover {
-    color: red;
-    background-color: black;
-}
-
-input:focus {
-    border-color: blue;
-    outline: none;
-}
-
-input:disabled {
-    background-color: blueviolet;
-}
-
-input:required {
-    background-color: red;
-}
-
-li {
-    position: relative;
-}
-
-li::before {
-    content: "";
-    width: 10px;
-    height: 1px;
-    background-color: blue;
-    position: absolute;
-    bottom: 0px;
-}
-
-li::after {
-    content: "";
-    width: 10px;
-    height: 1px;
-    background-color: blue;
-    position: absolute;
-    bottom: 0px;
-}
-
-p:nth-of-type(2)::first-line {
-    font-weight: bold;
+.item:nth-child(1) {
+    order: 1;
 }
