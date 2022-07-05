@@ -1,10 +1,15 @@
 .box {
     display: flex;
     border: 1px solid red;
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 
 .box div {
     border: 1px solid;
-    width: 80px;
+
+    flex-basis: auto;
+}
+
+.box div:nth-child(1){
+    width: 150px;
 }
