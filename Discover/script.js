@@ -1,22 +1,24 @@
-// Navegando pelos elementos
-// parentNode parentElement
-const body = document.querySelector("body");
-console.log(body.parentNode); // ver quem é o nó pai
-console.log(body.parentElement); // ver quem é o nó pai
+// Criando e adicionando elementos
 
-// childNodes children
-const el = document.querySelector("body");
-console.log(el.childNodes);
-console.log(el.children); // elimina os espaços vazios e traz em htmlColletion
-console.log(el.firstChild);
-console.log(el.firstElementChild); // elimina os espaços vazios
-console.log(el.lastChild);
-console.log(el.lastElementChild); // "elimina os espaços vazios"
+// createElement
+const div = document.createElement('div')
+div.innerText = "Olá div"
 
-// Navegar pelos elementos irmãos
+const div2 = document.createElement('div')
+div2.innerText = "Olá div2"
 
-const element = document.querySelector("header");
-console.log(element.nextSibling);
-console.log(element.nextElementSibling); // desconsidera espaço vazio
-console.log(element.previousSibling);
-console.log(element.previousElementSibling); // desconsidera espaço vazio
+const div3 = document.createElement('div')
+div3.innerText = "Olá div3"
+
+// append prepend
+const body = document.querySelector('body')
+body.append(div)
+body.prepend(div2)
+
+
+// insert before
+const script = body.querySelector('script')
+body.insertBefore(div, script)
+
+const header = body.querySelector('header')
+body.insertBefore(div3, header.nextElementSibling)
