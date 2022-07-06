@@ -1,28 +1,34 @@
-//retorna o elemento pouco mais rapido ~
-const element = document.getElementById('blog-title')
-console.log(element);
+// Manipulando conteúdo
 
-//retorna o HTMLColletion
-const classe = document.getElementsByClassName('one')
-console.log(classe);
+//textContent 
+const element = document.querySelector('h1')
+element.textContent += " OLA DOM"
+console.log(element.textContent);
 
-//retorna o HTMLColletion
-const tag = document.getElementsByTagName('p')
-console.log(tag);
+//InnerText
+element.innerText = "Boa dia"
 
-//retorna o elemento
-const selector = document.querySelector('.one')
-console.log(selector);
+//InnerHTML
+element.innerHTML = "ola dev <small>UII</small>"
 
-//retorna o elemento
-const atributo = document.querySelector('[src]')
-console.log(atributo); 
+//value
+const input = document.querySelector('input')
+console.log(input.value);
+input.value += " aoba tudo bom"
 
-//retorna o NodeList
-const todosSelectors = document.querySelectorAll('#outro-id')
-console.log(todosSelectors);
 
-// diferença entre html colection e node
-// no nodelist vc consegue utilizar foreach
-const elementosAll = document.querySelectorAll('#mais-id')
-elementosAll.forEach(el => console.log(el));
+// Manipular Atributos
+
+// setAttribute()
+const header = document.querySelector('header')
+header.setAttribute('id', 'header')
+const headerId = document.querySelector('#header')
+
+// getAttribute()
+console.log(headerId.getAttribute('id'))
+console.log(headerId.getAttribute('class'))
+
+// removeAttribute()
+header.removeAttribute('id')
+header.removeAttribute('class')
+
