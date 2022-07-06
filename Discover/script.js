@@ -1,34 +1,12 @@
-// Manipulando conteúdo
+// Alterando estilos
+const element = document.querySelector('body')
 
-//textContent 
-const element = document.querySelector('h1')
-element.textContent += " OLA DOM"
-console.log(element.textContent);
+// element.style.backgroundColor = "#f9f3db"
+console.log(element.style.backgroundColor);
 
-//InnerText
-element.innerText = "Boa dia"
-
-//InnerHTML
-element.innerHTML = "ola dev <small>UII</small>"
-
-//value
-const input = document.querySelector('input')
-console.log(input.value);
-input.value += " aoba tudo bom"
-
-
-// Manipular Atributos
-
-// setAttribute()
-const header = document.querySelector('header')
-header.setAttribute('id', 'header')
-const headerId = document.querySelector('#header')
-
-// getAttribute()
-console.log(headerId.getAttribute('id'))
-console.log(headerId.getAttribute('class'))
-
-// removeAttribute()
-header.removeAttribute('id')
-header.removeAttribute('class')
-
+// alterando estilos com classList
+const estilo = document.querySelector('body')
+estilo.classList.add('active', 'green')
+console.log(estilo.classList);
+estilo.classList.remove('green')
+estilo.classList.toggle('active') //se ja tiver remove, se n adiciona
