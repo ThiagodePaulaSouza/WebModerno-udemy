@@ -1,10 +1,14 @@
+const { inherits } = require('util')
 const { EventEmitter } = require('events')
 
-ev = new EventEmitter()
+function Character(name) {
+    this.name = name
+}
 
-ev.on('DigaAlgo', (mensagem) => {
-    console.log('eu ouvi você ' + mensagem)
-})
+inherits(Character, EventEmitter);
 
-ev.emit('DigaAlgo', 'bunitão')
-ev.emit('DigaAlgo', 'Horroroso')
+const chapolin = new Character('Chapolin')
+chapolin.on('help', () => console.log(`Eu! o ${chapolin.name} colorado`))
+
+console.log('Oh e agora quem podera me defender?');
+chapolin.emit('help')
