@@ -1,4 +1,5 @@
 # 😄 Exercicios de Javascript
+- [🧃 Crud com NodeJs](https://github.com/ThiagodePaulaSouza/Javascript-Exercises/tree/main/crud-node)
 - [⛳ Linktree para instagram](https://github.com/ThiagodePaulaSouza/Javascript-Exercises/tree/main/MaratonaExplorer2)
 - [🤐 Revela seu destino](https://github.com/ThiagodePaulaSouza/Javascript-Exercises/tree/main/MaratonaExplorer)
 - [😤 Consumo de api de cep](https://github.com/ThiagodePaulaSouza/Javascript-Exercises/tree/main/consumirAPI)
