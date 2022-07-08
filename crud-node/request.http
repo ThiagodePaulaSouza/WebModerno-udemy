@@ -2,8 +2,8 @@ POST http://localhost:4002/products
 Content-Type: application/json
 
 {
-    "name": "bola lendaria",
-    "price": 121.12
+    "name": "Teclado gamer kubuntu",
+    "price": 539
 }
 
 ###
@@ -13,20 +13,20 @@ GET http://localhost:4002/products
 
 ###
 
-GET http://localhost:4002/products/0c04c351-4add-4efc-b4a0-e118b0efce05
+GET http://localhost:4002/products/7d154314-53b0-4db9-8b94-35b30b92114a
 
 
 ###
 
-PUT http://localhost:4002/products/83621b59-2a8b-4b85-a908-f50558a05e7a
+PUT http://localhost:4002/products/e6ab4f4b-0e77-41f3-999b-70d212190e97
 content-type: application/json
 
 {
-    "name": "Caneta lendária",
-    "price": 3200.25
+    "name": "bacia azul",
+    "price": 2.00
 }
 
 
 ###
 
-DELETE http://localhost:4002/products/80a61d8a-0ea0-442b-bb95-f195fc686336
+DELETE http://localhost:4002/products/cddfd3a1-7f24-44ac-8349-a48395c59faf

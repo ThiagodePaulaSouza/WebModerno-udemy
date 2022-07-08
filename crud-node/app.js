@@ -1,12 +1,30 @@
 const express = require("express");
 const { randomUUID } = require("crypto");
+const fs = require("fs");
 
 const app = express();
 
 app.use(express.json());
 
-// "bd"
-const products = [];
+let products = [];
+
+function productFile() {
+  fs.writeFile("products.json", JSON.stringify(products), (err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Produto Inserido");
+    }
+  });
+}
+
+fs.readFile("products.json", "utf-8", (err, data) => {
+  if (err) {
+    console.log(err);
+  } else {
+    products = JSON.parse(data);
+  }
+});
 
 /** METODOS HTTP
  * POST - inserir dado
@@ -33,6 +51,8 @@ app.post("/products", (request, response) => {
 
   products.push(product);
 
+  productFile();
+
   return response.json(product);
 });
 
@@ -50,23 +70,28 @@ app.put("/products/:id", (request, response) => {
   const { id } = request.params;
   const { name, price } = request.body;
 
-  const productIndex = products.findIndex(product => product.id == id);
+  const productIndex = products.findIndex((product) => product.id == id);
   products[productIndex] = {
     ...products[productIndex],
     name,
-    price
-  }
+    price,
+  };
 
-  return response.json({message: "Produto Alterado com sucesso!"})
+  productFile();
+
+  return response.json({ message: "Produto Alterado com sucesso!" });
 });
-
 
 app.delete("/products/:id", (request, response) => {
   const { id } = request.params;
-  const productIndex = products.findIndex(product => product.id == id);
+  const productIndex = products.findIndex((product) => product.id == id);
   products.splice(productIndex, 1);
 
-  return response.json({message: "Produto Deletado com sucesso!"})
-})
+  productFile();
+
+  return response.json({ message: "Produto Deletado com sucesso!" });
+});
+
+
 
 app.listen(4002, () => console.log("Servidor rodando na porta 4002"));
