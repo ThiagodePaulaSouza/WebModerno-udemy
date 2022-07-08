@@ -1,0 +1,32 @@
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+    "name": "bola lendaria",
+    "price": 121.12
+}
+
+###
+
+GET http://localhost:4002/products
+
+
+###
+
+GET http://localhost:4002/products/0c04c351-4add-4efc-b4a0-e118b0efce05
+
+
+###
+
+PUT http://localhost:4002/products/83621b59-2a8b-4b85-a908-f50558a05e7a
+content-type: application/json
+
+{
+    "name": "Caneta lendária",
+    "price": 3200.25
+}
+
+
+###
+
+DELETE http://localhost:4002/products/80a61d8a-0ea0-442b-bb95-f195fc686336
