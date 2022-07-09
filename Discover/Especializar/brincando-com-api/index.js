@@ -1,4 +1,5 @@
 const express = require('express')
+const axios = require('axios')
 const app = express()
 
 app.listen(3000)
@@ -7,9 +8,8 @@ app.listen(3000)
 // midware
 app.use(express.json())
 
-app.route('/').get( (req, res) => res.send(req.query.name) )
-app.route('/').put( (req, res) => res.send(req.body.author))
-app.route('/:parametro').get( (req, res) => res.send(req.params.parametro))
-
-//http://localhost:3000/?name=thigas
-//aparece thigas no navegador
+app.route('/').get((req, res) => {
+    axios.get('https://api.github.com/users/thiagodepaulasouza')
+    .then(result => res.send(`<img src="${result.data.avatar_url}" />`))
+    .catch(error => console.error(error))
+})
