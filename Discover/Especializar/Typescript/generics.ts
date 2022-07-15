@@ -21,7 +21,7 @@ function useState<T extends number | string = number>() {
     return { get, set }
 }
 
-let newState = useState();
+let newState = useState<number | string>();
 newState.get();
 newState.set("bizarro")
 newState.set(123)
