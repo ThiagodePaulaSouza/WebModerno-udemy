@@ -7,4 +7,4 @@ userId = 1
 adminId = 'bom dia'
 
 // Type 'true' is not assignable to type 'IdTypes
-userId = true
+// userId = true
