@@ -9,7 +9,7 @@
  * 
  */
 
-function useState<T extends number | string>() {
+function useState<T extends number | string = number>() {
     let state: T;
     function get() {
         return state;
