@@ -9,7 +9,7 @@
  * 
  */
 
-function useState<T>() {
+function useState<T extends number | string>() {
     let state: T;
     function get() {
         return state;
@@ -21,7 +21,7 @@ function useState<T>() {
     return { get, set }
 }
 
-let newState = useState<string | number>();
+let newState = useState();
 newState.get();
 newState.set("bizarro")
 newState.set(123)
