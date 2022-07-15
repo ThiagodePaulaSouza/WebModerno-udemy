@@ -1,6 +1,7 @@
 type Point = {
     x: number;
     y: number;
+    test?: string;
 }
 
 
