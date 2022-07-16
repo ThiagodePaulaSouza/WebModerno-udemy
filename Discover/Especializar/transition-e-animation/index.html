@@ -6,15 +6,33 @@
     <style>
       .ball {
         width: 100px;
-        height: 100px;
-        border-radius: 100%;
-        background: red;
+        height: 50px;
+        background: blueviolet;
         position: relative;
-        animation-name: example-two;
-        animation-duration: 1s;
-        animation-delay: 2s;
+        animation-name: example;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
-        animation-direction: alternate;
+        /* animation-direction: alternate; */
+      }
+
+      .linear {
+        animation-timing-function: linear;
+      }
+
+      .ease {
+        animation-timing-function: ease;
+      }
+
+      .ease-in{
+        animation-timing-function: ease-in;
+      }
+
+      .ease-out {
+        animation-timing-function: ease-out;
+      }
+
+      .ease-in-out {
+        animation-timing-function: ease-in-out;
       }
 
       @keyframes example-one {
@@ -57,9 +75,23 @@
           top: 0px;
         }
       }
+
+      @keyframes example {
+        from {
+          left: 0px;
+        }
+
+        to {
+          left: calc(100% - 100px);
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="ball"></div>
+    <div class="ball linear">LINEAR</div>
+    <div class="ball ease">EASE</div>
+    <div class="ball ease-in">EASE-IN</div>
+    <div class="ball ease-out">EASE-OUT</div>
+    <div class="ball ease-in-out">ease-in-out</div>
   </body>
 </html>
