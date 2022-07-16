@@ -1,76 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Css Animation</title>
 
     <style>
-      body {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
-      }
-      .box {
+      .ball {
         width: 100px;
         height: 100px;
-        border-radius: 20%;
-      }
-
-      .box-red {
-        background: red;
-        transition: background-color 1s ease 4s;
-      }
-
-      .box-red:hover {
-        background: #ff0;
-        transition-property: background-color;
-        transition-duration: 1s;
-        transition-timing-function: ease-in;
-        transition-delay: 4s;
-      }
-
-      .box-green {
-        background: green;
-        transition: all 1s linear 0s;
-      }
-
-      .box-green:hover {
-        transition: all 1s cubic-bezier(.29, 1.01, 1, -0.68);
-        background: rgb(255, 0, 258);
-        width: 300px;
-        height: 300px;
         border-radius: 100%;
+        background: red;
+        position: relative;
+        animation-name: example-two;
+        animation-duration: 10s;
       }
 
-      .box-blue {
-        background: blue;
-        transition: all 1s linear 1s;
+      @keyframes example-one {
+        from {
+          background: blueviolet;
+        }
+        to {
+          background: rosybrown;
+        }
       }
 
-      .box-blue:hover {
-        transition: width 2s ease-in-out 0s;
-        width: 400px;
-      }
+      @keyframes example-two {
+        0% {
+          background-color: blueviolet;
+          left: 0;
+          top: 0;
+        }
 
-      .box-yellow {
-        background: yellow;
-        transition: all 2s linear 1s;
-      }
+        25% {
+          background-color: rosybrown;
+          left: 300px;
+          top: 0;
+        }
 
-      .box-yellow:hover {
-        opacity: 0;
-        transition: opacity 1s linear 0s;
-      }
+        50% {
+          background: blue;
+          left: 300px;
+          top: 300px;
+        }
 
+        75% {
+          background-color: yellow;
+          left: 0px;
+          top: 300px;
+        }
+
+        100% {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="box box-red"></div>
-    <div class="box box-green"></div>
-    <div class="box box-blue"></div>
-    <div class="box box-yellow"></div>
+    <div class="ball"></div>
   </body>
 </html>
