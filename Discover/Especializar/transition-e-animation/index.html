@@ -11,28 +11,9 @@
         position: relative;
         animation-name: example;
         animation-duration: 2s;
-        animation-iteration-count: infinite;
-        /* animation-direction: alternate; */
-      }
-
-      .linear {
-        animation-timing-function: linear;
-      }
-
-      .ease {
-        animation-timing-function: ease;
-      }
-
-      .ease-in{
-        animation-timing-function: ease-in;
-      }
-
-      .ease-out {
-        animation-timing-function: ease-out;
-      }
-
-      .ease-in-out {
-        animation-timing-function: ease-in-out;
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: backwards; */
+        animation-fill-mode: both;
       }
 
       @keyframes example-one {
@@ -79,19 +60,17 @@
       @keyframes example {
         from {
           left: 0px;
+          background: cyan;
         }
 
         to {
           left: calc(100% - 100px);
         }
       }
+
     </style>
   </head>
   <body>
-    <div class="ball linear">LINEAR</div>
-    <div class="ball ease">EASE</div>
-    <div class="ball ease-in">EASE-IN</div>
-    <div class="ball ease-out">EASE-OUT</div>
-    <div class="ball ease-in-out">ease-in-out</div>
+    <div class="ball">LINEAR</div>
   </body>
 </html>
