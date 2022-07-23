@@ -1,4 +1,5 @@
 # 😄 Exercicios de Javascript
+- [😵 parallex scrolling](https://github.com/ThiagodePaulaSouza/parallex-scrolling)
 - [🎮 Memory game](https://github.com/ThiagodePaulaSouza/memory-game)
 - [📎 LinkBio](https://github.com/ThiagodePaulaSouza/link-bio)
 - [🧃 Crud com NodeJs](https://github.com/ThiagodePaulaSouza/Javascript-Exercises/tree/main/crud-node)
