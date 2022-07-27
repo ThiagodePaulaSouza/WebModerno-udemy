@@ -1,14 +1,25 @@
-/**
- * LocalStorage
- * Recurso que salva dados no navegador que persiste após o recarregamento da página
- + Capacidade maxima de 10mb
- * n tem tempo de expiração mas podem ser removidos 
- * os dados ficam na aba Application no chrome dev toots
-**/ 
-/**
- * SessionStorage
- * similar ao localStorage
- + capacidade maxima de 5mb
- * os dados exiram quando a aba é fechada
- * os dados ficam na aba Application no chrome dev toots
- */
+// Inserir Dados
+localStorage.setItem('name', 'thiago')
+
+// reset sem perder dados
+
+// Resgatar dados
+const name = localStorage.getItem('name')
+console.log(name);
+
+// resgatar dados que nao existem
+const lastName = localStorage.getItem('lastname')
+console.log(lastName);
+
+// remover item
+localStorage.removeItem("name")
+
+// como vem o resultado?
+localStorage.setItem('a', 1)
+localStorage.setItem('b', 2)
+localStorage.setItem('c', 3)
+
+console.log(typeof localStorage.getItem('a')); // sempre retorna string
+
+// limpa todos os itens 
+localStorage.clear()
