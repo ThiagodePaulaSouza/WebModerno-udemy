@@ -1,18 +1,15 @@
-// SessionStorage
-sessionStorage.setItem('number', 123)
-console.log(typeof sessionStorage.getItem('number')); //retorna string (OBS: se não tiver ele retorna um objeto)
+// salvar objeto
+const person = {
+  name: 'thiago',
+  age: 20,
+  job: 'nothing',
+};;
 
-// adicionar dados
-sessionStorage.setItem('opa', 123)
+sessionStorage.setItem('person', person) //object Object
+sessionStorage.setItem('person', JSON.stringify(person)) //objeto correto :D
 
-// resgatar dados
-const opa = sessionStorage.getItem('opa')
-console.log(opa);
+const getPerson = sessionStorage.getItem('person')
+console.log(getPerson.name); //undefined por causa que está em formato json
 
-// remover dados
-sessionStorage.removeItem('number')
-sessionStorage.removeItem('opa')
-
-// clear
-sessionStorage.clear() // remover até a propriedade deixada pelo sessionStorage
-
+const getPersonObject = JSON.parse(getPerson) //muda pra objeto js
+console.log(getPersonObject.name, getPersonObject.age, getPersonObject.job);
