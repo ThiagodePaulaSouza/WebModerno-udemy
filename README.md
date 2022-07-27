@@ -1,4 +1,5 @@
 # 😄 Exercicios de Javascript
+- [🚦 menu indicator](https://github.com/ThiagodePaulaSouza/menu-indicator)
 - [😵 parallex scrolling](https://github.com/ThiagodePaulaSouza/parallex-scrolling)
 - [🎮 Memory game](https://github.com/ThiagodePaulaSouza/memory-game)
 - [📎 LinkBio](https://github.com/ThiagodePaulaSouza/link-bio)
