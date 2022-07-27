@@ -1,25 +1,18 @@
-// Inserir Dados
-localStorage.setItem('name', 'thiago')
+// SessionStorage
+sessionStorage.setItem('number', 123)
+console.log(typeof sessionStorage.getItem('number')); //retorna string (OBS: se não tiver ele retorna um objeto)
 
-// reset sem perder dados
+// adicionar dados
+sessionStorage.setItem('opa', 123)
 
-// Resgatar dados
-const name = localStorage.getItem('name')
-console.log(name);
+// resgatar dados
+const opa = sessionStorage.getItem('opa')
+console.log(opa);
 
-// resgatar dados que nao existem
-const lastName = localStorage.getItem('lastname')
-console.log(lastName);
+// remover dados
+sessionStorage.removeItem('number')
+sessionStorage.removeItem('opa')
 
-// remover item
-localStorage.removeItem("name")
+// clear
+sessionStorage.clear() // remover até a propriedade deixada pelo sessionStorage
 
-// como vem o resultado?
-localStorage.setItem('a', 1)
-localStorage.setItem('b', 2)
-localStorage.setItem('c', 3)
-
-console.log(typeof localStorage.getItem('a')); // sempre retorna string
-
-// limpa todos os itens 
-localStorage.clear()
