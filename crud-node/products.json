@@ -1,1 +1,32 @@
-[{"name":"bacia preta","price":12.24,"id":"e6ab4f4b-0e77-41f3-999b-70d212190e97"},{"name":"Televisão","price":1202.99,"id":"ce3614ee-a3cc-491c-8739-79ab46899101"},{"name":"Monitor Gamer AOC Sniper","price":1200.42,"id":"7d154314-53b0-4db9-8b94-35b30b92114a"},{"name":"Memoria ram coirsair 4gram ddr3","price":400,"id":"cddfd3a1-7f24-44ac-8349-a48395c59faf"},{"name":"Televisão 4K UHD","price":400,"id":"19621472-a5f2-4535-af9f-c226c1f4afb4"},{"name":"Teclado gamer kubuntu","price":539,"id":"f19ad534-b449-4405-a4a3-dc028345383a"}]
+[
+  {
+    "name": "bacia preta",
+    "price": 12.24,
+    "id": "e6ab4f4b-0e77-41f3-999b-70d212190e97"
+  },
+  {
+    "name": "Televisão",
+    "price": 1202.99,
+    "id": "ce3614ee-a3cc-491c-8739-79ab46899101"
+  },
+  {
+    "name": "Monitor Gamer AOC Sniper",
+    "price": 1200.42,
+    "id": "7d154314-53b0-4db9-8b94-35b30b92114a"
+  },
+  {
+    "name": "Memoria ram coirsair 4gram ddr3",
+    "price": 400,
+    "id": "cddfd3a1-7f24-44ac-8349-a48395c59faf"
+  },
+  {
+    "name": "Televisão 4K UHD",
+    "price": 400,
+    "id": "19621472-a5f2-4535-af9f-c226c1f4afb4"
+  },
+  {
+    "name": "Teclado gamer kubuntu",
+    "price": 539,
+    "id": "f19ad534-b449-4405-a4a3-dc028345383a"
+  }
+]
