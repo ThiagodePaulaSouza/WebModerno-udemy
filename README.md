@@ -1,4 +1,5 @@
 # 😄 Exercicios de Javascript
+- [⛽ LocalStorage](https://github.com/ThiagodePaulaSouza/Javascript-Exercises/tree/main/localStorage-sessionStorage)
 - [🚦 menu indicator](https://github.com/ThiagodePaulaSouza/menu-indicator)
 - [😵 parallex scrolling](https://github.com/ThiagodePaulaSouza/parallex-scrolling)
 - [🎮 Memory game](https://github.com/ThiagodePaulaSouza/memory-game)
