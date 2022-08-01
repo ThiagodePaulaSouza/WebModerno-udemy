@@ -8,7 +8,7 @@ const cliente = new Client({
 })
 
 cliente.connect()
-cliente.query('select * from bdmembros')
+cliente.query('select * from tb_membro')
 .then(res => {
     const resultado = res.rows 
     console.log(resultado);
