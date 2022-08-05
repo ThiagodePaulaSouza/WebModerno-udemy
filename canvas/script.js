@@ -1,22 +1,24 @@
-const canvas = document.querySelector("canvas");
-const cc = canvas.getContext("2d");
+var tela = document.querySelector("canvas");
+var pincel = tela.getContext("2d");
 
-cc.fillStyle = "green";
-cc.fillRect(0, 0, 350, 300);
+pincel.fillStyle = "green";
+pincel.fillRect(0, 0, 600, 400);
 
-// eye1
-cc.fillStyle = 'black';
-cc.fillRect(50, 50, 90, 90)
+pincel.fillStyle = "yellow";
+pincel.beginPath();
+pincel.moveTo(300, 50);
+pincel.lineTo(50, 200);
+pincel.lineTo(550, 200);
+pincel.fill();
 
-// eye2
-cc.fillRect(210, 50, 90, 90)
+pincel.beginPath();
+pincel.moveTo(300, 350);
+pincel.lineTo(50, 200);
+pincel.lineTo(550, 200);
+pincel.fill();
 
-// mouth1
-cc.fillRect(140, 140, 70, 100)
+pincel.fillStyle = "darkblue";
+pincel.beginPath();
 
-// mouthleft
-cc.fillRect(100, 190, 40, 110)
-
-// mouthright
-cc.fillRect(210, 190, 40, 110)
-
+pincel.arc(300, 200, 100, 0, 2 * 3.14);
+pincel.fill();
