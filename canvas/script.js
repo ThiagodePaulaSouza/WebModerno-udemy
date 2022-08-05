@@ -1,36 +1,25 @@
+var tela = document.querySelector("canvas");
+var pincel = tela.getContext("2d");
+pincel.fillStyle = "lightgray";
+pincel.fillRect(0, 0, 600, 400);
 
-    var paleta = document.querySelector('input');
-    var tela = document.querySelector('canvas');
-    var pincel = tela.getContext('2d');
+function desenhaCirculo(x, y, raio) {
+  pincel.fillStyle = "white";
+  pincel.beginPath();
+  pincel.arc(x, y, raio, 0, 2 * Math.PI);
+  pincel.fill();
+}
 
-    pincel.fillStyle = 'grey';
-    pincel.fillRect(0, 0, 600, 400);
+function limpaTela() {
+  pincel.clearRect(0, 0, 600, 400);
+}
 
-    var desenha = false;
+var x = 20;
 
-    function desenhaCirculo(evento) {
+function atualizaTela() {
+  limpaTela();
+  desenhaCirculo(x, 20, 10);
+  x++;
+}
 
-        if(desenha) {
-            var x = evento.pageX - tela.offsetLeft;
-            var y = evento.pageY - tela.offsetTop;
-            pincel.fillStyle = paleta.value; // sempre pega o valor atual da paleta!
-            pincel.beginPath();
-            pincel.arc(x, y, 10, 0, 2 * 3.14);
-            pincel.fill();
-        }
-        console.log(x + ',' + y);
-    }
-
-    tela.onmousemove = desenhaCirculo;
-
-    // atribuindo diretamente a função anônima
-    tela.onmousedown = function() {
-
-        desenha = true;
-    }
-
-    // atribuindo diretamente a função anônima
-     tela.onmouseup = function() {
-
-        desenha = false;
-    }
+setInterval(atualizaTela, 10);
