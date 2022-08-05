@@ -1,24 +1,17 @@
-var tela = document.querySelector("canvas");
-var pincel = tela.getContext("2d");
+const canvas = document.querySelector("canvas");
+const cc = canvas.getContext("2d");
 
-pincel.fillStyle = "green";
-pincel.fillRect(0, 0, 600, 400);
+cc.fillStyle = "grey";
+cc.fillRect(0, 0, 600, 400);
 
-pincel.fillStyle = "yellow";
-pincel.beginPath();
-pincel.moveTo(300, 50);
-pincel.lineTo(50, 200);
-pincel.lineTo(550, 200);
-pincel.fill();
+function exibeAlert (evento){
+  let x = evento.pageX - canvas.offsetLeft;
+  let y = evento.pageY - canvas.offsetTop;
+  cc.fillStyle = "green";
+  cc.beginPath();
+  cc.arc(x, y, 10, 0, 2 * 3.14);
+  cc.fill();
+  console.log(x + ", " + y);
+};
 
-pincel.beginPath();
-pincel.moveTo(300, 350);
-pincel.lineTo(50, 200);
-pincel.lineTo(550, 200);
-pincel.fill();
-
-pincel.fillStyle = "darkblue";
-pincel.beginPath();
-
-pincel.arc(300, 200, 100, 0, 2 * 3.14);
-pincel.fill();
+canvas.onclick = exibeAlert;
