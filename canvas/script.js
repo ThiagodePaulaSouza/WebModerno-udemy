@@ -1,17 +1,28 @@
-const canvas = document.querySelector("canvas");
-const cc = canvas.getContext("2d");
+var tela = document.querySelector("canvas");
+var pincel = tela.getContext("2d");
 
-cc.fillStyle = "grey";
-cc.fillRect(0, 0, 600, 400);
+pincel.fillStyle = "grey";
+pincel.fillRect(0, 0, 600, 400);
 
-function exibeAlert (evento){
-  let x = evento.pageX - canvas.offsetLeft;
-  let y = evento.pageY - canvas.offsetTop;
-  cc.fillStyle = "green";
-  cc.beginPath();
-  cc.arc(x, y, 10, 0, 2 * 3.14);
-  cc.fill();
-  console.log(x + ", " + y);
+var desenha = false;
+
+// atribuindo diretamente a função anônima
+tela.onmousemove = function (evento) {
+  if (desenha) {
+    var x = evento.pageX - tela.offsetLeft;
+    var y = evento.pageY - tela.offsetTop;
+    pincel.fillStyle = "blue";
+    pincel.beginPath();
+    pincel.arc(x, y, 5, 0, 2 * 3.14);
+    pincel.fill();
+  }
+  console.log(x + "," + y);
 };
 
-canvas.onclick = exibeAlert;
+tela.onmousedown = function () {
+  desenha = true;
+};
+
+tela.onmouseup = function () {
+  desenha = false;
+};
