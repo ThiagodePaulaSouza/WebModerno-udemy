@@ -1,29 +1,22 @@
 const canvas = document.querySelector("canvas");
 const cc = canvas.getContext("2d");
-cc.fillStyle = "lightgrey";
-cc.fillRect(0, 0, 600, 350);
 
-cc.fillStyle = 'blue';
-cc.fillRect(0, 0, 200, 350);
+cc.fillStyle = "green";
+cc.fillRect(0, 0, 350, 300);
 
-cc.fillStyle = 'red';
-cc.fillRect(400, 0, 200, 350);
+// eye1
+cc.fillStyle = 'black';
+cc.fillRect(50, 50, 90, 90)
 
-cc.fillStyle = 'green'
-cc.beginPath();
-cc.moveTo(300, 175)
-cc.lineTo(200, 350);
-cc.lineTo(400, 350);
-cc.fill()
+// eye2
+cc.fillRect(210, 50, 90, 90)
 
-cc.fillStyle = 'green'
-cc.beginPath();
-cc.moveTo(300, 175)
-cc.lineTo(200, 0);
-cc.lineTo(400, 0);
-cc.fill()
+// mouth1
+cc.fillRect(140, 140, 70, 100)
 
-cc.fillStyle = 'green'
-cc.beginPath()
-cc.arc(300, 175, 50, 0, 2*3.14)
-cc.fill()
+// mouthleft
+cc.fillRect(100, 190, 40, 110)
+
+// mouthright
+cc.fillRect(210, 190, 40, 110)
+
